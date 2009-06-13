@@ -1,0 +1,16 @@
+#main
+  %img{:src => "http://www.istrianet.org/istria/news/europe/glas_istre/images/05_0628meduza.jpg"}
+  %p= @meduza.name
+  %p= "zadowolenie " + @meduza.happy.to_i.to_s + " %"
+  %p
+    = "głód: " + @meduza.hungry.to_s + " %"
+    %a{:href => "/daj_jesc"} daj jeść
+  %p
+    = "pragnienie: " + @meduza.thirsty.to_s + " %"
+    %a{:href => "/daj_pic"} daj pić
+  %p
+    = "nuda: " + @meduza.bored.to_s + " %"
+    %a{:href => "/pobaw_sie"} pobaw się
+  %p= "choroba: " + @meduza.sick.to_s + " %"
+  
+  
